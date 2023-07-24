@@ -30,11 +30,11 @@ console.log(unflatten([3, 5, 2, 1 ]));
 // https://www.codewars.com/kata/5a438bc1e1ce0e129100005a
 function unusualLexOrder(arr) {
   let reverse = arr.map(str => {
-    return str.split('').reverse().join('')
+    return str.split('').reverse().join('');
   });
   
   return reverse.sort().map(word => {
-    return word.split('').reverse().join('')
+    return word.split('').reverse().join('');
   });
 }
 
@@ -56,10 +56,10 @@ function to24hourtime(hour, minute, period) {
   return formatHour + formatMinute;
 }
 
-console.log(to24hourtime(6, 30, "am"));//0630
-console.log(to24hourtime(6, 30, "pm"));//0630
-console.log(to24hourtime(1,  0, "am"));//0100
-console.log(to24hourtime(12,  0, "am"));//'0000'
-console.log(to24hourtime(12,  0, "pm"));//1200
+console.log(to24hourtime(6, 30, "am"));
+console.log(to24hourtime(6, 30, "pm"));
+console.log(to24hourtime(1,  0, "am"));
+console.log(to24hourtime(12,  0, "am"));
+console.log(to24hourtime(12,  0, "pm"));
 
 
